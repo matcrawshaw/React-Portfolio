@@ -10,9 +10,11 @@ import {
   rem,
   Text, 
   Title,
+  Button
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-
+import SwitchToggle from './LightDarkButton'
+import logolight from './logo-light.png'
 
 const HEADER_HEIGHT = rem(60);
 
@@ -20,7 +22,9 @@ const useStyles = createStyles((theme) => ({
   root: {
     position: 'relative',
     zIndex: 1,
+    borderBottom: "0"
   },
+
 
   dropdown: {
     position: 'absolute',
@@ -80,7 +84,7 @@ const useStyles = createStyles((theme) => ({
   linkActive: {
     '&, &:hover': {
       backgroundColor: theme.fn.variant({ variant: 'light', color: theme.primaryColor }).background,
-      color: theme.fn.variant({ variant: 'light', color: theme.primaryColor }).color,
+      color: "theme.fn.variant({ variant: 'light', color: theme.primaryColor }).color",
     },
   },
 }));
@@ -93,8 +97,8 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
   const [opened, { toggle, close }] = useDisclosure(false);
   const [active, setActive] = useState(links[0].link);
   const { classes, cx } = useStyles();
-
   const items = links.map((link) => (
+
     <a
       key={link.label}
       href={link.link}
@@ -110,22 +114,71 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
   ));
 
   return (
+       <Container size="100%" px={0} >
+       
+      
     <Header height={120}  className={classes.root}>
       <Container className={classes.header}>
-      <Title className={classes.title}>
-              
-              <Text
-                component="span"
-                inherit
-                variant="gradient"
-                gradient={{ from: 'pink', to: 'yellow' }}
-              >
-                Mat Crawshaw
-              </Text>{' '}
+      <Title className={classes.link}>
+      <a component="a" href="/"><img 
+    
+  
+      style={{ width: 100, height: 100 }} src={logolight} alt="logo" />
+
+        </a>
               
             </Title>
         <Group spacing={5} className={classes.links}>
-          {items}
+        <Text
+              color="gray.5"
+              component="a"
+              href="#about"
+              className={classes.link}
+            >
+              <Text color="#0E49B5" px={7}>
+          
+              </Text>
+              <code>About Me</code>
+            </Text>
+            <Text
+              color="gray.5"
+              component="a"
+              href="#work"
+              className={classes.link}
+            >
+              <Text color="#0E49B5" px={7}>
+                
+              </Text>
+              <code>My Work</code>
+            </Text>
+            <Text
+              color="gray.5"
+              component="a"
+              href="#contact"
+              className={classes.link}
+            >
+              <Text color="#0E49B5" px={7}>
+                
+              </Text>
+              <code>Contact Me</code>
+            </Text>
+
+            <Text
+              color="gray.5"
+              component="a"
+              href="#resume"
+              
+            >
+              <Text color="#0E49B5" px={7}>
+               
+              </Text>
+              <Button className={classes.link} color="grape" variant="outline">
+                 Resume
+               </Button>
+            </Text>
+
+
+       
         </Group>
 
         <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
@@ -133,21 +186,58 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
         <Transition transition="pop-top-right" duration={200} mounted={opened}>
           {(styles) => (
             <Paper className={classes.dropdown} withBorder style={styles}>
-              {items}
+              <Text
+              color="gray.5"
+              component="a"
+              href="#about"
+              className={classes.link}
+            >
+              <Text color="#0E49B5" px={7}>
+          
+              </Text>
+              <code>About Me</code>
+            </Text>
+            <Text
+              color="gray.5"
+              component="a"
+              href="#work"
+              className={classes.link}
+            >
+              <Text color="#0E49B5" px={7}>
+                
+              </Text>
+              <code>My Work</code>
+            </Text>
+            <Text
+              color="gray.5"
+              component="a"
+              href="#contact"
+              className={classes.link}
+            >
+              <Text color="#0E49B5" px={7}>
+                
+              </Text>
+              <code>Contact Me</code>
+            </Text>
+
+            <Text
+              color="gray.5"
+              component="a"
+              href="#resume"
+              className={classes.link}
+            >
+              <Text color="#0E49B5" px={7}>
+                
+              </Text>
+              <code>Resume</code>
+            </Text>
+           
             </Paper>
           )}
         </Transition>
       </Container>
     </Header>
-    
-
-
-
-
-
-
-
-
+</Container>
     
   );
 }

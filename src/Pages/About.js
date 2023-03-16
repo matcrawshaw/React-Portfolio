@@ -6,12 +6,12 @@ import {
     rem,
     useMantineTheme, 
     Group, 
-    Avatar,
+  
   Button } from '@mantine/core';
   import { IconBrandGithub, IconBrandLinkedin} from '@tabler/icons-react';
   import "../Fonts/Jaldi-Bold.ttf"
  
-import avatarPhoto from './person-outline.png'
+
 
 const useStyles = createStyles((theme) => ({
   
@@ -86,19 +86,14 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-function HeroImageRight() {
+function AboutPage() {
   const { classes } = useStyles();
   const theme = useMantineTheme();
   return (
     <div className={classes.root}>
       <Container size="lg" style={{ display: "inline", height: rem(1000) }}> 
   <code style={{color: theme.white, display: "block"}} >Hi there 👋 i'm</code> 
-  <h1 style={{color: theme.white, fontFamily: "Jaldi-Bold", display: "inline-block"}}>Tay </h1>
-  <Avatar  style={{display: "inline-block", height: rem("5%") }} stylesrc={avatarPhoto} alt="it's me" />
-  <code style={{color: theme.white, display: "block"}} >And i'm a front-end web developer. </code> 
-  <Button style={{marginTop: rem(22)}}variant="gradient" gradient={{ from: 'teal', to: 'grape' }}>Check My Builds</Button>
-      
-      <a style={{color: theme.white, marginTop: rem(15), display: "block"}}> <IconBrandGithub/> <IconBrandLinkedin/></a>
+   
       
       </Container>
       
@@ -109,4 +104,4 @@ function HeroImageRight() {
   );
 }
 
-export default HeroImageRight;
+export default AboutPage;
