@@ -6,11 +6,12 @@ import {
     rem,
     useMantineTheme, 
     Group, 
-    Button } from '@mantine/core';
+  
+  Button } from '@mantine/core';
   import { IconBrandGithub, IconBrandLinkedin} from '@tabler/icons-react';
   import "../Fonts/Jaldi-Bold.ttf"
  
-
+import Cards from '../Components/Cards'
 
 const useStyles = createStyles((theme) => ({
   
@@ -85,14 +86,14 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-function AboutPage() {
+function WorkPage() {
   const { classes } = useStyles();
   const theme = useMantineTheme();
   return (
     <div className={classes.root}>
       <Container size="lg" style={{ display: "inline", height: rem(1000) }}> 
-  <code style={{color: theme.white, display: "block"}} >Im new to coding pls leave me alone</code> 
-   
+  <code style={{color: theme.white, display: "block"}} >My Work</code> 
+  <Cards/>
       
       </Container>
       
@@ -103,4 +104,4 @@ function AboutPage() {
   );
 }
 
-export default AboutPage;
+export default WorkPage;

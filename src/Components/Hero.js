@@ -86,20 +86,21 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-function HeroImageRight() {
+function HomeJumbotron() {
   const { classes } = useStyles();
   const theme = useMantineTheme();
   return (
     <div className={classes.root}>
       <Container size="lg" style={{ display: "inline", height: rem(1000) }}> 
   <code style={{color: theme.white, display: "block"}} >Hi there 👋 i'm</code> 
-  <h1 style={{color: theme.white, fontFamily: "Jaldi-Bold", display: "inline-block"}}>Tay </h1>
+  <h1 style={{color: "#96F2D7", fontFamily: "Jaldi-Bold", display: "inline-block"}}>Tay Crawshaw </h1>
   <Avatar  style={{display: "inline-block", height: rem("5%") }} stylesrc={avatarPhoto} alt="it's me" />
   <code style={{color: theme.white, display: "block"}} >And i'm a front-end web developer. </code> 
   <Button style={{marginTop: rem(22)}}variant="gradient" gradient={{ from: 'teal', to: 'grape' }}>Check My Builds</Button>
-      
-      <a style={{color: theme.white, marginTop: rem(15), display: "block"}}> <IconBrandGithub/> <IconBrandLinkedin/></a>
-      
+      <div style={{marginTop: rem(14)}}>
+      <a href="" style={{color: theme.white, marginTop: rem(15), display: "inline"}}> <IconBrandGithub/></a>
+      <a href="" style={{color: theme.white, marginTop: rem(15), display: "inline"}}><IconBrandLinkedin/></a>
+      </div>
       </Container>
       
 
@@ -109,4 +110,4 @@ function HeroImageRight() {
   );
 }
 
-export default HeroImageRight;
+export default HomeJumbotron;

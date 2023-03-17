@@ -1,3 +1,4 @@
+import { Link, NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import {
   createStyles,
@@ -120,46 +121,45 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
     <Header height={120}  className={classes.root}>
       <Container className={classes.header}>
       <Title className={classes.link}>
-      <a component="a" href="/"><img 
+      <NavLink to="/" > <a component="a" href="/"><img 
     
   
       style={{ width: 100, height: 100 }} src={logolight} alt="logo" />
 
-        </a>
+        </a> </NavLink>
               
             </Title>
         <Group spacing={5} className={classes.links}>
-        <Text
+        <NavLink  
+        to="/about"
+        end 
+        style={{textDecoration: "none"}}
+       
               color="gray.5"
-              component="a"
-              href="#about"
               className={classes.link}
-            >
-              <Text color="#0E49B5" px={7}>
-          
-              </Text>
+             px={7}>     
               <code>About Me</code>
-            </Text>
-            <Text
+           
+            </NavLink>
+        <NavLink 
+        to="/work"
+        end 
+        style={{textDecoration: "none"}}
+
               color="gray.5"
-              component="a"
-              href="#work"
               className={classes.link}
-            >
-              <Text color="#0E49B5" px={7}>
+              px={7}>
                 
-              </Text>
+              
               <code>My Work</code>
-            </Text>
+            
+            </NavLink>
             <Text
               color="gray.5"
               component="a"
               href="#contact"
               className={classes.link}
-            >
-              <Text color="#0E49B5" px={7}>
-                
-              </Text>
+              px={7}>              
               <code>Contact Me</code>
             </Text>
 
@@ -167,11 +167,9 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
               color="gray.5"
               component="a"
               href="#resume"
-              
-            >
-              <Text color="#0E49B5" px={7}>
+              px={7}>
                
-              </Text>
+             
               <Button className={classes.link} color="grape" variant="outline">
                  Resume
                </Button>

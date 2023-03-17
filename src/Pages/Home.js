@@ -1,8 +1,8 @@
-import HeroImageRight from '../Components/Hero'
+import HomeJumbotron from '../Components/Hero'
 
 
 function HomePage() {
-<HeroImageRight/>
+    return (<HomeJumbotron/>)
 }
 
 export default HomePage;
