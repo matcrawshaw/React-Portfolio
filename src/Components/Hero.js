@@ -12,7 +12,7 @@ import {
   import "../Fonts/Jaldi-Bold.ttf"
  
 import avatarPhoto from './person-outline.png'
-
+import { Link } from "react-router-dom";
 const useStyles = createStyles((theme) => ({
   
   root: {
@@ -96,7 +96,9 @@ function HomeJumbotron() {
   <h1 style={{color: "#96F2D7", fontFamily: "Jaldi-Bold", display: "inline-block"}}>Tay Crawshaw </h1>
   <Avatar  style={{display: "inline-block", height: rem("5%") }} stylesrc={avatarPhoto} alt="it's me" />
   <code style={{color: theme.white, display: "block"}} >And i'm a front-end web developer. </code> 
+  <Link to="/work" end>
   <Button style={{marginTop: rem(22)}}variant="gradient" gradient={{ from: 'teal', to: 'grape' }}>Check My Builds</Button>
+  </Link>
       <div style={{marginTop: rem(14)}}>
       <a href="" style={{color: theme.white, marginTop: rem(15), display: "inline"}}> <IconBrandGithub/></a>
       <a href="" style={{color: theme.white, marginTop: rem(15), display: "inline"}}><IconBrandLinkedin/></a>

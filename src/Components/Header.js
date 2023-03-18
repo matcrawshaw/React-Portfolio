@@ -154,23 +154,27 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
               <code>My Work</code>
             
             </NavLink>
-            <Text
+            <NavLink
+            to="/contact"
               color="gray.5"
-              component="a"
-              href="#contact"
               className={classes.link}
               px={7}>              
               <code>Contact Me</code>
-            </Text>
+            </NavLink>
 
             <Text
               color="gray.5"
               component="a"
               href="#resume"
               px={7}>
-               
              
-              <Button className={classes.link} color="grape" variant="outline">
+              <Button
+              component="a"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://drive.google.com/file/d/1mDhBXlhM7zZLD8WiPkvPiQzwyqFqOGVy/view?usp=share_link"
+              
+              className={classes.link} color="grape" variant="outline">
                  Resume
                </Button>
             </Text>

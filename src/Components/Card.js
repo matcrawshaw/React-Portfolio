@@ -61,7 +61,11 @@ function ArticleCardFooter({
         <Image src={image} alt={title} height={180} />
       </Card.Section>
 
-      <Badge>{category}</Badge>
+
+{category.map((badge) => (
+  <Badge>{badge}</Badge>
+))}
+      
 
       <Text fw={700} className={classes.title} mt="xs">
         {title}
@@ -90,16 +94,16 @@ function ArticleCardFooter({
           target="_blank"
           rel="noopener noreferrer"
           href={liveLink}
-          style={{ width: rem(140), marginRight: rem(2)}}
+          style={{ width: rem(150), marginRight: rem(2)}}
           variant="gradient" gradient={{ from: 'grape', to: 'teal' }}
-          >Deployed</Button>
+          >Deployed App</Button>
 
           <Button 
           component="a"
           target="_blank"
           rel="noopener noreferrer"
           href={repoLink}
-          style={{width: rem(140), marginLeft: rem(2)}}variant="gradient" gradient={{ from: 'teal', to: 'grape' }}
+          style={{width: rem(150), marginLeft: rem(2)}}variant="gradient" gradient={{ from: 'teal', to: 'grape' }}
           >Repository</Button>
           
           </div>

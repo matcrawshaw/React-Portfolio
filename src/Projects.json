@@ -2,42 +2,42 @@
     {
         "name": "Team Profile Generator",
         "details": {"description": "Command line application to generate a HTML page containing team information collected via terminal prompts"},
-        "tech": "Node.js",
+        "tech": ["Node.js", "HTML", "CSS"],
         "img": "https://user-images.githubusercontent.com/119896882/224826158-637a3f54-7e92-4e92-b821-9185fcf05ff6.PNG",
         "repo": "https://github.com/matcrawshaw/Team-Profile-Generator"
     },
     {
         "name": "Team Profile Generator",
         "details": {"description": "Command line application to generate a HTML page containing team information collected via terminal prompts"},
-        "tech": "Node.js",
+        "tech": ["Node.js"],
         "img": "https://user-images.githubusercontent.com/119896882/224826158-637a3f54-7e92-4e92-b821-9185fcf05ff6.PNG",
         "repo": "https://github.com/matcrawshaw/Team-Profile-Generator"
     },
     {
         "name": "Team Profile Generator",
         "details": {"description": "Command line application to generate a HTML page containing team information collected via terminal prompts"},
-        "tech": "Node.js",
+        "tech": ["Node.js"],
         "img": "https://user-images.githubusercontent.com/119896882/224826158-637a3f54-7e92-4e92-b821-9185fcf05ff6.PNG",
         "repo": "https://github.com/matcrawshaw/Team-Profile-Generator"
     },
     {
         "name": "Team Profile Generator",
         "details": {"description": "Command line application to generate a HTML page containing team information collected via terminal prompts"},
-        "tech": "Node.js",
+        "tech": ["Node.js"],
         "img": "https://user-images.githubusercontent.com/119896882/224826158-637a3f54-7e92-4e92-b821-9185fcf05ff6.PNG",
         "repo": "https://github.com/matcrawshaw/Team-Profile-Generator"
     },
     {
         "name": "Team Profile Generator",
         "details": {"description": "Command line application to generate a HTML page containing team information collected via terminal prompts"},
-        "tech": "Node.js",
+        "tech": ["Node.js"],
         "img": "https://user-images.githubusercontent.com/119896882/224826158-637a3f54-7e92-4e92-b821-9185fcf05ff6.PNG",
         "repo": "https://github.com/matcrawshaw/Team-Profile-Generator"
     },
     {
         "name": "Team Profile Generator",
         "details": {"description": "Command line application to generate a HTML page containing team information collected via terminal prompts"},
-        "tech": "Node.js",
+        "tech": ["Node.js"],
         "img": "https://user-images.githubusercontent.com/119896882/224826158-637a3f54-7e92-4e92-b821-9185fcf05ff6.PNG",
         "repo": "https://github.com/matcrawshaw/Team-Profile-Generator"
     }
