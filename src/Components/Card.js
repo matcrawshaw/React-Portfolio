@@ -8,6 +8,7 @@ import {
   Avatar,
   Badge,
   rem,
+  Button
 } from '@mantine/core';
 import { IconHeart, IconBookmark, IconShare } from '@tabler/icons-react';
 
@@ -34,6 +35,8 @@ interface ArticleCardFooterProps {
   category: string;
   title: string;
   footer: string;
+  liveLink: string;
+  repoLink: string;
   author: {
     name: string;
     description: string;
@@ -46,6 +49,8 @@ function ArticleCardFooter({
   category,
   title,
   footer,
+  liveLink,
+  repoLink,
   author,
 }: ArticleCardFooterProps) {
   const { classes, theme } = useStyles();
@@ -66,22 +71,38 @@ function ArticleCardFooter({
       
         <div>
         
-          <Text className="justify-center" style={{justifyContent: 'center', color: theme.white}}fz="xs" c="dimmed">
+          <Text  style={{color: theme.white}}fz="xs" c="dimmed">
             {author.description}
           </Text>
         </div>
       </Group>
 
       <Card.Section className={classes.footer}>
-        <Group position="apart">
+        <Group style={{display: "flex" ,justifyContent: "center"}} position="apart">
           <Text fz="xs" c="dimmed">
             {footer}
           </Text>
-          <Group spacing={0}>
-            
+        
+            <div style={{whiteSpace: "nowrap"}}>
+          
+          <Button 
+          component="a"
+          target="_blank"
+          rel="noopener noreferrer"
+          href={liveLink}
+          style={{ width: rem(140), marginRight: rem(2)}}
+          variant="gradient" gradient={{ from: 'grape', to: 'teal' }}
+          >Deployed</Button>
 
-
-          </Group>
+          <Button 
+          component="a"
+          target="_blank"
+          rel="noopener noreferrer"
+          href={repoLink}
+          style={{width: rem(140), marginLeft: rem(2)}}variant="gradient" gradient={{ from: 'teal', to: 'grape' }}
+          >Repository</Button>
+          
+          </div>
         </Group>
       </Card.Section>
     </Card>

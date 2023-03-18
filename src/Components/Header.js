@@ -188,11 +188,8 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
               color="gray.5"
               component="a"
               href="#about"
-              className={classes.link}
-            >
-              <Text color="#0E49B5" px={7}>
-          
-              </Text>
+              className={classes.link}>
+         
               <code>About Me</code>
             </Text>
             <Text
