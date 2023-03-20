@@ -90,8 +90,12 @@ function AboutPage() {
   const theme = useMantineTheme();
   return (
     <div className={classes.root}>
-      <Container size="lg" style={{ display: "inline", height: rem(1000) }}> 
-  <code style={{color: theme.white, display: "block"}} >Im new to coding pls leave me alone</code> 
+      <Container size="lg" style={{ display: "flex", height: rem(1000), maxWidth: rem(600) }}> 
+  <code style={{color: theme.white, lineHeight: 1.5} } >After working on the commercial side of the Software industry in channel distribution for several years, I have decided to change my career path into Web Development.{"\n"} After graduating from my front-end development bootcamp I am currently looking to learn as much as possible with the hope to continue my journey with a company soon.
+
+  If you have any suggestions for my portfolio, any work opportunities, or simpy want to stay connected then please get in touch
+  
+  </code> 
    
       
       </Container>

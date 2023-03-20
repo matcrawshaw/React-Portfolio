@@ -63,7 +63,7 @@ function ArticleCardFooter({
 
 
 {category.map((badge) => (
-  <Badge>{badge}</Badge>
+  <Badge style={{margin: rem(2)}}>{badge}</Badge>
 ))}
       
 

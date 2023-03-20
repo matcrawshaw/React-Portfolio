@@ -2,37 +2,37 @@
     {
         "name": "Team Profile Generator",
         "details": {"description": "Command line application to generate a HTML page containing team information collected via terminal prompts"},
-        "tech": ["Node.js", "HTML", "CSS"],
+        "tech": ["Node.js", "Jest", "HTML", "CSS"],
         "img": "https://user-images.githubusercontent.com/119896882/224826158-637a3f54-7e92-4e92-b821-9185fcf05ff6.PNG",
         "repo": "https://github.com/matcrawshaw/Team-Profile-Generator"
     },
     {
-        "name": "Team Profile Generator",
-        "details": {"description": "Command line application to generate a HTML page containing team information collected via terminal prompts"},
-        "tech": ["Node.js"],
-        "img": "https://user-images.githubusercontent.com/119896882/224826158-637a3f54-7e92-4e92-b821-9185fcf05ff6.PNG",
-        "repo": "https://github.com/matcrawshaw/Team-Profile-Generator"
+        "name": "README Generator",
+        "details": {"description": "Command line application to generate professional README.md files via Node.js. Once running, the user is prompted a series of questions which is then used to populate the template as required."},
+        "tech": ["Node.js", "Inquirer"],
+        "img": "https://user-images.githubusercontent.com/119896882/226229852-63e90f2c-2a38-4f1b-82f8-7176636f5b8e.png",
+        "repo": "https://github.com/matcrawshaw/ReadMeGenerator"
     },
     {
-        "name": "Team Profile Generator",
-        "details": {"description": "Command line application to generate a HTML page containing team information collected via terminal prompts"},
-        "tech": ["Node.js"],
-        "img": "https://user-images.githubusercontent.com/119896882/224826158-637a3f54-7e92-4e92-b821-9185fcf05ff6.PNG",
-        "repo": "https://github.com/matcrawshaw/Team-Profile-Generator"
+        "name": "Get Ready",
+        "details": {"description": "Front end webpage that gathers information about a location for a user to help prepare for their travel."},
+        "tech": ["jQuery", "Javascript", "HTML", "CSS"],
+        "img": "https://user-images.githubusercontent.com/118021969/226191381-2952d7ba-184e-4d8c-a44b-94d635e8ae06.png",
+        "repo": "https://github.com/Maks6831/travel-infoguide"
     },
     {
-        "name": "Team Profile Generator",
-        "details": {"description": "Command line application to generate a HTML page containing team information collected via terminal prompts"},
-        "tech": ["Node.js"],
-        "img": "https://user-images.githubusercontent.com/119896882/224826158-637a3f54-7e92-4e92-b821-9185fcf05ff6.PNG",
-        "repo": "https://github.com/matcrawshaw/Team-Profile-Generator"
+        "name": "Code Quiz",
+        "details": {"description": "Javascript knowledge quiz with saved highscores"},
+        "tech": ["Javascript"],
+        "img": "https://user-images.githubusercontent.com/119896882/214693488-9f32b03d-3c0d-4dcc-adf7-dbff607d6ced.png",
+        "repo": "https://github.com/matcrawshaw/Code-Quiz"
     },
     {
-        "name": "Team Profile Generator",
+        "name": "Weather Dashboard",
         "details": {"description": "Command line application to generate a HTML page containing team information collected via terminal prompts"},
-        "tech": ["Node.js"],
-        "img": "https://user-images.githubusercontent.com/119896882/224826158-637a3f54-7e92-4e92-b821-9185fcf05ff6.PNG",
-        "repo": "https://github.com/matcrawshaw/Team-Profile-Generator"
+        "tech": ["jQuery", "Javascript", "HTML", "CSS"],
+        "img": "https://user-images.githubusercontent.com/119896882/217853352-08b02d3c-31b0-4d8c-a73b-c339158abf0f.PNG",
+        "repo": "https://github.com/matcrawshaw/Weather-Dashboard-App"
     },
     {
         "name": "Team Profile Generator",
