@@ -67,6 +67,7 @@ const useStyles = createStyles((theme) => ({
       fontSize: rem(34),
       lineHeight: 1.15,
     },
+    
   },
 
   description: {

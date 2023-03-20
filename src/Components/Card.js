@@ -56,7 +56,7 @@ function ArticleCardFooter({
   const { classes, theme } = useStyles();
 
   return (
-    <Card withBorder padding="lg" radius="md" className={classes.card}>
+    <Card withBorder padding="lg" radius="md" style={{ background: "rgba(0, 0, 0, 0.6)"}} className={classes.card}>
       <Card.Section mb="sm">
         <Image src={image} alt={title} height={180} />
       </Card.Section>

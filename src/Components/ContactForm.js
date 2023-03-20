@@ -17,9 +17,9 @@ function GetInTouchSimple() {
   });
 
   return (
-    <form onSubmit={form.onSubmit(() => {})}>
+    <form style={{opacity: "90%"}} onSubmit={form.onSubmit(() => {})}>
       <Title
-        order={2}
+        order={2} 
         size="h1"
         sx={(theme) => ({ fontFamily: `Greycliff CF, ${theme.fontFamily}`, color: theme.white })}
         weight={900}
@@ -28,7 +28,7 @@ function GetInTouchSimple() {
         Get in touch
       </Title>
 
-      <SimpleGrid cols={2} mt="xl" breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
+      <SimpleGrid  cols={2} mt="xl" breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
         <TextInput
           label="Name"
           placeholder="Your name"
