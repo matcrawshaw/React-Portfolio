@@ -17,7 +17,7 @@ const useStyles = createStyles((theme) => ({
   
   root: {
     position: "relative",
-    background: "#1A1B1E",
+    // background: "#1A1B1E",
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     paddingBottom: `calc(${theme.spacing.xl} * 3)`,

@@ -23,7 +23,8 @@ const useStyles = createStyles((theme) => ({
   root: {
     position: 'relative',
     zIndex: 1,
-    borderBottom: "0"
+    borderBottom: "0",
+    background: "transparent"
   },
 
 

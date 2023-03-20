@@ -17,7 +17,7 @@ const useStyles = createStyles((theme) => ({
   
   root: {
     position: "relative",
-    background: "#1A1B1E",
+    // background: "#1A1B1E",
    height: "70dvh",
     backgroundSize: 'cover',
     backgroundPosition: 'center',
@@ -93,9 +93,9 @@ function HomeJumbotron() {
     <div className={classes.root}>
       <Container size="lg" style={{ display: "inline", height: rem(1000) }}> 
   <code style={{color: theme.white, display: "block"}} >Hi there 👋 i'm</code> 
-  <h1 style={{color: "#96F2D7", fontFamily: "Jaldi-Bold", display: "inline-block"}}>Mat Crawshaw </h1>
-  <Avatar  style={{display: "inline-block", height: rem("5%") }} stylesrc={avatarPhoto} alt="it's me" />
-  <code style={{color: theme.white, display: "block"}} >And i'm a front-end web developer. </code> 
+  <h1 style={{color: "#96F2D7", fontFamily: "Jaldi-Bold", display: "block"}}>Mat Crawshaw </h1>
+  <Avatar  style={{display: "inline-block", marginTop: -10 }} stylesrc={avatarPhoto} alt="it's me" />
+  <code style={{color: theme.white, marginTop: 20, display: "block"}} >And i'm a front-end web developer. </code> 
   <Link to="/work" end>
   <Button style={{marginTop: rem(22)}}variant="gradient" gradient={{ from: 'teal', to: 'grape' }}>Check My Builds</Button>
   </Link>

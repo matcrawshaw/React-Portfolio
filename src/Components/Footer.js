@@ -6,7 +6,7 @@ const useStyles = createStyles((theme) => ({
 
  
   footer: {
-    background: "#1A1B1E",
+    // background: "#1A1B1E",
     height: "20dvh",
     borderTop: `${rem(1)} solid ${
       theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
@@ -38,11 +38,11 @@ function FooterSocial() {
 
   return (
     <div  className={classes.footer}>
-      <Container className={classes.inner}>
+      <Container style={{justifyContent: "center"}} className={classes.inner}>
         
-        <Group    spacing={0} className={classes.links} noWrap>
-      <a href="" style={{color: theme.white, marginTop: rem(15), display: "inline"}}> <IconBrandGithub/></a>
-      <a href="" style={{color: theme.white, marginTop: rem(15), display: "inline"}}><IconBrandLinkedin/></a>
+        <Group   spacing={0} className={classes.links} noWrap>
+      <a href="" style={{color: theme.white, marginTop: rem(15)}}> <IconBrandGithub/></a>
+      <a href="" style={{color: theme.white, marginTop: rem(15)}}><IconBrandLinkedin/></a>
         </Group>
       </Container>
     </div>

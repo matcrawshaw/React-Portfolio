@@ -16,7 +16,7 @@
     {
         "name": "Get Ready",
         "details": {"description": "Front end webpage that gathers information about a location for a user to help prepare for their travel."},
-        "tech": ["jQuery", "Javascript", "HTML", "CSS"],
+        "tech": ["jQuery", "Javascript", "Bootstrap", "HTML", "CSS"],
         "img": "https://user-images.githubusercontent.com/118021969/226191381-2952d7ba-184e-4d8c-a44b-94d635e8ae06.png",
         "repo": "https://github.com/Maks6831/travel-infoguide"
     },
@@ -29,7 +29,7 @@
     },
     {
         "name": "Weather Dashboard",
-        "details": {"description": "Command line application to generate a HTML page containing team information collected via terminal prompts"},
+        "details": {"description": "Web application using the OpenWeather API, input a city to see current weather and 5-day forecast."},
         "tech": ["jQuery", "Javascript", "HTML", "CSS"],
         "img": "https://user-images.githubusercontent.com/119896882/217853352-08b02d3c-31b0-4d8c-a73b-c339158abf0f.PNG",
         "repo": "https://github.com/matcrawshaw/Weather-Dashboard-App"

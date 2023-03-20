@@ -61,11 +61,11 @@ function ArticleCardFooter({
         <Image src={image} alt={title} height={180} />
       </Card.Section>
 
-
+<div style={{height: rem(40)}}>
 {category.map((badge) => (
   <Badge style={{margin: rem(2)}}>{badge}</Badge>
 ))}
-      
+      </div>
 
       <Text fw={700} className={classes.title} mt="xs">
         {title}
@@ -75,7 +75,7 @@ function ArticleCardFooter({
       
         <div>
         
-          <Text  style={{color: theme.white}}fz="xs" c="dimmed">
+          <Text  style={{color: theme.white, height: rem(80)}}fz="xs" c="dimmed">
             {author.description}
           </Text>
         </div>

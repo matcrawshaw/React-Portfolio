@@ -1,3 +1,8 @@
+import GetInTouchSimple from '../Components/ContactForm'
+
+
+
+
 import { 
     createStyles, 
     Container, 
@@ -6,7 +11,9 @@ import {
     rem,
     useMantineTheme, 
     Group, 
-    Button } from '@mantine/core';
+   
+  
+  Button } from '@mantine/core';
   import { IconBrandGithub, IconBrandLinkedin} from '@tabler/icons-react';
   import "../Fonts/Jaldi-Bold.ttf"
  
@@ -17,7 +24,6 @@ const useStyles = createStyles((theme) => ({
   root: {
     position: "relative",
     // background: "#1A1B1E",
-   height: "70dvh",
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     paddingBottom: `calc(${theme.spacing.xl} * 3)`,
@@ -85,26 +91,19 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-function AboutPage() {
+function ContactPage() {
+
   const { classes } = useStyles();
-  const theme = useMantineTheme();
-  return (
-    <div className={classes.root}>
-      <Container size="lg" style={{maxWidth: rem(600) }}> 
-  <code style={{color: theme.white, lineHeight: 1.5} } >After working on the commercial side of the Software industry in channel distribution for several years, I have decided to change my career path into Web Development.{"\n"} After graduating from my front-end development bootcamp I am currently looking to learn as much as possible with the hope to continue my journey with a company soon.
+return (
+<div className={classes.root}>
+    <Container size="lg" style={{ display: "flex", height: rem(1000), justifyContent: "center" }}> 
+    <GetInTouchSimple/>
 
-  If you have any suggestions for my portfolio, any work opportunities, or simpy want to stay connected then please get in touch.
-  
-  </code> 
-   
-      
-      </Container>
-      
-
-
-
+    </Container>
     </div>
-  );
+
+)
 }
 
-export default AboutPage;
+
+export default ContactPage
