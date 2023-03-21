@@ -1,13 +1,9 @@
 import { 
     createStyles, 
     Container, 
-    Title, 
-    Text, 
     rem,
-    useMantineTheme, 
-    Group, 
-    Button } from '@mantine/core';
-  import { IconBrandGithub, IconBrandLinkedin} from '@tabler/icons-react';
+    useMantineTheme} from '@mantine/core';
+
   import "../Fonts/Jaldi-Bold.ttf"
  
 
@@ -17,7 +13,7 @@ const useStyles = createStyles((theme) => ({
   root: {
     position: "relative",
     // background: "#1A1B1E",
-   height: "70dvh",
+    minHeight: "70dvh",
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     paddingBottom: `calc(${theme.spacing.xl} * 3)`,
@@ -49,7 +45,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   title: {
-    color: theme.white,
+   
     fontFamily: `Greycliff CF, ${theme.fontFamily}`,
     fontWeight: 900,
     lineHeight: 1.05,

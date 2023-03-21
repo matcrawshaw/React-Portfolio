@@ -11,7 +11,7 @@ const projectsData = require('../Projects.json');
 
 
 
-function Cards() {
+function CardGrid() {
 
 
   return (
@@ -56,4 +56,4 @@ function Cards() {
   )
 }
 
-export default Cards
+export default CardGrid

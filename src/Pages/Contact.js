@@ -1,20 +1,12 @@
 import GetInTouchSimple from '../Components/ContactForm'
 
 
-
-
 import { 
     createStyles, 
     Container, 
-    Title, 
-    Text, 
     rem,
-    useMantineTheme, 
-    Group, 
    
-  
-  Button } from '@mantine/core';
-  import { IconBrandGithub, IconBrandLinkedin} from '@tabler/icons-react';
+} from '@mantine/core';
   import "../Fonts/Jaldi-Bold.ttf"
  
 
@@ -93,11 +85,11 @@ const useStyles = createStyles((theme) => ({
 }));
 
 function ContactPage() {
-
+ 
   const { classes } = useStyles();
 return (
 <div className={classes.root}>
-    <Container size="lg" style={{ display: "flex", height: rem(1000), justifyContent: "center" }}> 
+    <Container size="lg" style={{ display: "flex",  justifyContent: "center" }}> 
     <GetInTouchSimple/>
 
     </Container>

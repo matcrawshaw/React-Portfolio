@@ -1,11 +1,8 @@
 import { 
     createStyles, 
     Container, 
-    Title, 
-    Text, 
     rem,
     useMantineTheme, 
-    Group, 
     Avatar,
   Button } from '@mantine/core';
   import { IconBrandGithub, IconBrandLinkedin} from '@tabler/icons-react';

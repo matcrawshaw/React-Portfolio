@@ -1,4 +1,4 @@
-import HomeJumbotron from '../Components/Hero'
+import HomeJumbotron from '../Components/Jumbotron'
 
 
 function HomePage() {

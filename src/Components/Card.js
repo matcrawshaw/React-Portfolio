@@ -2,10 +2,8 @@ import {
   createStyles,
   Card,
   Image,
-  ActionIcon,
   Group,
   Text,
-  Avatar,
   Badge,
   rem,
   Button
@@ -15,10 +13,6 @@ import { IconHeart, IconBookmark, IconShare } from '@tabler/icons-react';
 const useStyles = createStyles((theme) => ({
   card: {
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
-  },
-
-  title: {
-    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
   },
 
   footer: {

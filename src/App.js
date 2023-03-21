@@ -1,9 +1,9 @@
 import { MantineProvider } from '@mantine/core';
 import './App.css';
 import HeaderSimpleProps from './Components/Header';
-import HomeJumbotron from './Components/Hero'
+import HomeJumbotron from './Components/Jumbotron'
 import { Button } from '@mantine/core';
-import Cards from './Components/Cards'
+import CardGrid from './Components/CardGrid'
 import FooterSocial from './Components/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './Pages/Home';

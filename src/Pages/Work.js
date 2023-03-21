@@ -1,17 +1,12 @@
 import { 
     createStyles, 
     Container, 
-    Title, 
-    Text, 
     rem,
     useMantineTheme, 
-    Group, 
-  
-  Button } from '@mantine/core';
-  import { IconBrandGithub, IconBrandLinkedin} from '@tabler/icons-react';
+      } from '@mantine/core';
   import "../Fonts/Jaldi-Bold.ttf"
  
-import Cards from '../Components/Cards'
+import Cards from '../Components/CardGrid'
 
 const useStyles = createStyles((theme) => ({
   

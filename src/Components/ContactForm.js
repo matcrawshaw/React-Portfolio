@@ -1,7 +1,10 @@
-import { TextInput, Textarea, SimpleGrid, Group, Title, Button } from '@mantine/core';
+
+import { TextInput, Textarea, SimpleGrid, Group, Title, Button, useMantineTheme } from '@mantine/core';
 import { useForm } from '@mantine/form';
 
+
 function GetInTouchSimple() {
+  const theme = useMantineTheme();
   const form = useForm({
     initialValues: {
       name: '',
@@ -17,7 +20,10 @@ function GetInTouchSimple() {
   });
 
   return (
-    <form style={{opacity: "90%"}} onSubmit={form.onSubmit(() => {})}>
+
+   
+    <div style={{opacity: "90%"}}>
+    <form  onSubmit={form.onSubmit(() => {})}>
       <Title
         order={2} 
         size="h1"
@@ -71,7 +77,12 @@ function GetInTouchSimple() {
         </Button>
       </Group>
     </form>
+    <h1 style={{fontFamily: `Greycliff CF, ${theme.fontFamily}`, color: theme.white}}>Or reach me via email at mat_crawshaw@hotmail.com</h1>
+
+ </div>
   );
+
+
 }
 
 
