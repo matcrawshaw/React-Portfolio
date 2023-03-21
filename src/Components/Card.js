@@ -61,7 +61,7 @@ function ArticleCardFooter({
         <Image src={image} alt={title} height={180} />
       </Card.Section>
 
-<div style={{height: rem(40)}}>
+<div style={{height: rem(40)}}>   
 {category.map((badge) => (
   <Badge style={{margin: rem(2)}}>{badge}</Badge>
 ))}

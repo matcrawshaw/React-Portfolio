@@ -29,7 +29,7 @@ function Cards() {
    category= {project.tech} 
    image={project.img}
    repoLink={project.repo}
-   liveLink={project.liveLink}
+   liveLink={project.live}
    author={project.details}
    />
    </Grid.Col>
