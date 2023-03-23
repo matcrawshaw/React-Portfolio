@@ -174,47 +174,53 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
         <Transition transition="pop-top-right" duration={200} mounted={opened}>
           {(styles) => (
             <Paper className={classes.dropdown} withBorder style={styles}>
-              <Text
+                     <NavLink  
+        to="/about"
+        end 
+        style={{textDecoration: "none"}}
+       
               color="gray.5"
-              component="a"
-              href="#about"
-              className={classes.link}>
-         
+              className={classes.link}
+             px={7}>     
               <code>About Me</code>
-            </Text>
-            <Text
+           
+            </NavLink>
+        <NavLink 
+        to="/work"
+        end 
+        style={{textDecoration: "none"}}
+
               color="gray.5"
-              component="a"
-              href="#work"
               className={classes.link}
-            >
-              <Text color="#0E49B5" px={7}>
+              px={7}>
                 
-              </Text>
+              
               <code>My Work</code>
-            </Text>
-            <Text
+            
+            </NavLink>
+            <NavLink
+            to="/contact"
               color="gray.5"
-              component="a"
-              href="#contact"
               className={classes.link}
-            >
-              <Text color="#0E49B5" px={7}>
-                
-              </Text>
+              px={7}>              
               <code>Contact Me</code>
-            </Text>
+            </NavLink>
 
             <Text
               color="gray.5"
               component="a"
               href="#resume"
-              className={classes.link}
-            >
-              <Text color="#0E49B5" px={7}>
-                
-              </Text>
-              <code>Resume</code>
+              px={7}
+             
+             
+              component="a"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://drive.google.com/file/d/1mDhBXlhM7zZLD8WiPkvPiQzwyqFqOGVy/view?usp=share_link"
+              
+              className={classes.link} color="grape" variant="outline">
+                 Resume
+           
             </Text>
            
             </Paper>
