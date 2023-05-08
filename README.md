@@ -29,7 +29,7 @@ _____________________
 
 ### ➡️ Usage Guide 
 
-- Follow the deployed link here https://main--nimble-toffee-f8cc04.netlify.app/
+- Follow the deployed link here taycrawshaw.netlify.app
 
 ___________________
 
