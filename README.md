@@ -4,7 +4,8 @@
 
 Portfolio page built in React with use of the MantineUI component library and tsParticles. 
 
-![image](https://user-images.githubusercontent.com/119896882/226485477-accc9728-0884-4c7d-a4dd-f7fc9b01214e.png)
+![screenshot](https://user-images.githubusercontent.com/119896882/236885920-f80f8c9a-4ed0-4231-90cd-7c961802ea2e.PNG)
+
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 _____________________
