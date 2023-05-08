@@ -9,7 +9,7 @@ import {
   Paper,
   Transition,
   rem,
-  Text, 
+  Text,
   Title,
   Button
 } from '@mantine/core';
@@ -90,9 +90,7 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-interface HeaderResponsiveProps {
-  links: { link: string; label: string }[];
-}
+
 
 export function HeaderResponsive({ links }: HeaderResponsiveProps) {
   const [opened, { toggle, close }] = useDisclosure(false);
@@ -101,50 +99,50 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
 
 
   return (
-       <Container size="100%" px={0} >
-       
-      
-    <Header height={120}  className={classes.root}>
-      <Container className={classes.header}>
-      <Title className={classes.link}>
-      <NavLink to="/" > <a component="a" href="/"><img 
-    
-  
-      style={{ width: 100, height: 100 }} src={logolight} alt="logo" />
+    <Container size="100%" px={0} >
 
-        </a> </NavLink>
-              
-            </Title>
-        <Group spacing={5} className={classes.links}>
-        <NavLink  
-        to="/about"
-        end 
-        style={{textDecoration: "none"}}
-       
-              color="gray.5"
-              className={classes.link}
-             px={7}>     
-              <code>About Me</code>
-           
-            </NavLink>
-        <NavLink 
-        to="/work"
-        end 
-        style={{textDecoration: "none"}}
+
+      <Header height={120} className={classes.root}>
+        <Container className={classes.header}>
+          <Title className={classes.link}>
+            <NavLink to="/" > <a component="a" href="/"><img
+
+
+              style={{ width: 100, height: 100 }} src={logolight} alt="logo" />
+
+            </a> </NavLink>
+
+          </Title>
+          <Group spacing={5} className={classes.links}>
+            <NavLink
+              to="/about"
+              end
+              style={{ textDecoration: "none" }}
 
               color="gray.5"
               className={classes.link}
               px={7}>
-                
-              
-              <code>My Work</code>
-            
+              <code>About Me</code>
+
             </NavLink>
             <NavLink
-            to="/contact"
+              to="/work"
+              end
+              style={{ textDecoration: "none" }}
+
               color="gray.5"
               className={classes.link}
-              px={7}>              
+              px={7}>
+
+
+              <code>My Work</code>
+
+            </NavLink>
+            <NavLink
+              to="/contact"
+              color="gray.5"
+              className={classes.link}
+              px={7}>
               <code>Contact Me</code>
             </NavLink>
 
@@ -153,83 +151,74 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
               component="a"
               href="#resume"
               px={7}>
-             
+
               <Button
-              component="a"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/1mDhBXlhM7zZLD8WiPkvPiQzwyqFqOGVy/view?usp=share_link"
-              
-              className={classes.link} color="grape" variant="outline">
-                 Resume
-               </Button>
+                component="a"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://drive.google.com/file/d/1WevRlOS8icvLZHCQv8RdMkQFYZGLpxcT/view?usp=share_link"
+
+                className={classes.link} color="grape" variant="outline">
+                Resume
+              </Button>
             </Text>
 
 
-       
-        </Group>
 
-        <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
+          </Group>
 
-        <Transition transition="pop-top-right" duration={200} mounted={opened}>
-          {(styles) => (
-            <Paper className={classes.dropdown} withBorder style={styles}>
-                     <NavLink  
-        to="/about"
-        end 
-        style={{textDecoration: "none"}}
-       
-              color="gray.5"
-              className={classes.link}
-             px={7}>     
-              <code>About Me</code>
-           
-            </NavLink>
-        <NavLink 
-        to="/work"
-        end 
-        style={{textDecoration: "none"}}
+          <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
 
-              color="gray.5"
-              className={classes.link}
-              px={7}>
-                
-              
-              <code>My Work</code>
-            
-            </NavLink>
-            <NavLink
-            to="/contact"
-              color="gray.5"
-              className={classes.link}
-              px={7}>              
-              <code>Contact Me</code>
-            </NavLink>
+          <Transition transition="pop-top-right" duration={200} mounted={opened}>
+            {(styles) => (
+              <Paper className={classes.dropdown} withBorder style={styles}>
+                <NavLink
+                  to="/about"
+                  end
+                  style={{ textDecoration: "none" }}
 
-            <Text
-              color="gray.5"
-              component="a"
-              href="#resume"
-              px={7}
-             
-             
-              component="a"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/1mDhBXlhM7zZLD8WiPkvPiQzwyqFqOGVy/view?usp=share_link"
-              
-              className={classes.link} color="grape" variant="outline">
-                 Resume
-           
-            </Text>
-           
-            </Paper>
-          )}
-        </Transition>
-      </Container>
-    </Header>
-</Container>
-    
+                  color="gray.5"
+                  className={classes.link}
+                  px={7}>
+                  <code>About Me</code>
+
+                </NavLink>
+                <NavLink
+                  to="/work"
+                  end
+                  style={{ textDecoration: "none" }}
+
+                  color="gray.5"
+                  className={classes.link}
+                  px={7}>
+                  <code>My Work</code>
+                </NavLink>
+                <NavLink
+                  to="/contact"
+                  color="gray.5"
+                  className={classes.link}
+                  px={7}>
+                  <code>Contact Me</code>
+                </NavLink>
+                <Text
+                  color="gray.5"
+                  component="a"
+                  px={7}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://drive.google.com/file/d/1mDhBXlhM7zZLD8WiPkvPiQzwyqFqOGVy/view?usp=share_link"
+                  className={classes.link} color="grape" variant="outline">
+                  Resume
+
+                </Text>
+
+              </Paper>
+            )}
+          </Transition>
+        </Container>
+      </Header>
+    </Container>
+
   );
 }
 

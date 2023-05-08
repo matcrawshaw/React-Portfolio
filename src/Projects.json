@@ -1,19 +1,27 @@
 [
     {
+        "name": "NoiseTracker",
+        "details": {"description": "Front-end application utilizing the LastFM API to show charts, as well as sync with other linked platforms. This was the final group project of the bootcamp."},
+        "tech": ["React", "Mantine", "Javascript", "HTML", "CSS"],
+        "img": "https://user-images.githubusercontent.com/119896882/228902162-aae7a902-40c3-41af-b335-4b57f83097a4.PNG",
+        "repo": "https://github.com/taycrawshaw/music-info-app",
+        "live": "https://courageous-bienenstitch-5285d5.netlify.app/home"
+    },
+    {
         "name": "Team Profile Generator",
         "details": {"description": "Command line application to generate a HTML page containing team information collected via terminal prompts"},
         "tech": ["Node.js", "Jest", "HTML", "CSS"],
         "img": "https://user-images.githubusercontent.com/119896882/224826158-637a3f54-7e92-4e92-b821-9185fcf05ff6.PNG",
-        "repo": "https://github.com/matcrawshaw/Team-Profile-Generator",
-        "live": "https://github.com/matcrawshaw/Team-Profile-Generator"
+        "repo": "https://github.com/taycrawshaw/Team-Profile-Generator",
+        "live": "https://github.com/taycrawshaw/Team-Profile-Generator"
     },
     {
         "name": "README Generator",
         "details": {"description": "Command line application to generate professional README.md files via Node.js. Once running, the user is prompted a series of questions which is then used to populate the template as required."},
         "tech": ["Node.js", "Inquirer"],
         "img": "https://user-images.githubusercontent.com/119896882/226229852-63e90f2c-2a38-4f1b-82f8-7176636f5b8e.png",
-        "repo": "https://github.com/matcrawshaw/ReadMeGenerator",
-        "live": "https://github.com/matcrawshaw/ReadMeGenerator"
+        "repo": "https://github.com/taycrawshaw/ReadMeGenerator",
+        "live": "https://github.com/taycrawshaw/ReadMeGenerator"
     },
     {
         "name": "Get Ready",
@@ -28,16 +36,17 @@
         "details": {"description": "Javascript knowledge quiz with saved highscores"},
         "tech": ["Javascript"],
         "img": "https://user-images.githubusercontent.com/119896882/214693488-9f32b03d-3c0d-4dcc-adf7-dbff607d6ced.png",
-        "repo": "https://github.com/matcrawshaw/Code-Quiz",
-        "live": "https://matcrawshaw.github.io/Code-Quiz/"
+        "repo": "https://github.com/taycrawshaw/Code-Quiz",
+        "live": "https://taycrawshaw.github.io/Code-Quiz/"
     },
     {
         "name": "Weather Dashboard",
         "details": {"description": "Web application using the OpenWeather API, input a city to see current weather and 5-day forecast."},
         "tech": ["jQuery", "Javascript", "HTML", "CSS"],
         "img": "https://user-images.githubusercontent.com/119896882/217853352-08b02d3c-31b0-4d8c-a73b-c339158abf0f.PNG",
-        "repo": "https://github.com/matcrawshaw/Weather-Dashboard-App",
-        "live": "https://matcrawshaw.github.io/Weather-Dashboard-App/"
+        "repo": "https://github.com/taycrawshaw/Weather-Dashboard-App",
+        "live": "https://taycrawshaw.github.io/Weather-Dashboard-App/"
     }
+    
 
 ]

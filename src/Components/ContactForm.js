@@ -19,67 +19,71 @@ function GetInTouchSimple() {
     },
   });
 
+
+
   return (
 
-   
-    <div style={{opacity: "90%"}}>
-    <form  onSubmit={form.onSubmit(() => {})}>
-      <Title
-        order={2} 
-        size="h1"
-        sx={(theme) => ({ fontFamily: `Greycliff CF, ${theme.fontFamily}`, color: theme.white })}
-        weight={900}
-        align="center"
-      >
-        Get in touch
-      </Title>
 
-      <SimpleGrid  cols={2} mt="xl" breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
+    <div style={{ opacity: "90%" }}>
+      {/* <form onSubmit={form.onSubmit((e) => {
+        console.log(e);
+      })}>
+        <Title
+          order={2}
+          size="h1"
+          sx={(theme) => ({ fontFamily: `Greycliff CF, ${theme.fontFamily}`, color: theme.white })}
+          weight={900}
+          align="center"
+        >
+          Get in touch
+        </Title>
+
+        <SimpleGrid cols={2} mt="xl" breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
+          <TextInput
+            label="Name"
+            placeholder="Your name"
+            name="name"
+            variant="filled"
+            {...form.getInputProps('name')}
+          />
+          <TextInput
+            label="Email"
+            placeholder="Your email"
+            name="email"
+            variant="filled"
+            {...form.getInputProps('email')}
+          />
+        </SimpleGrid>
+
         <TextInput
-          label="Name"
-          placeholder="Your name"
-          name="name"
+          label="Subject"
+          placeholder="Subject"
+          mt="md"
+          name="subject"
           variant="filled"
-          {...form.getInputProps('name')}
+          {...form.getInputProps('subject')}
         />
-        <TextInput
-          label="Email"
-          placeholder="Your email"
-          name="email"
+        <Textarea
+          mt="md"
+          label="Message"
+          placeholder="Your message"
+          maxRows={10}
+          minRows={5}
+          autosize
+          name="message"
           variant="filled"
-          {...form.getInputProps('email')}
+          {...form.getInputProps('message')}
         />
-      </SimpleGrid>
 
-      <TextInput
-        label="Subject"
-        placeholder="Subject"
-        mt="md"
-        name="subject"
-        variant="filled"
-        {...form.getInputProps('subject')}
-      />
-      <Textarea
-        mt="md"
-        label="Message"
-        placeholder="Your message"
-        maxRows={10}
-        minRows={5}
-        autosize
-        name="message"
-        variant="filled"
-        {...form.getInputProps('message')}
-      />
+        <Group position="center" mt="xl">
+          <Button variant="gradient" gradient={{ from: 'teal', to: 'grape' }} type="submit" size="md">
+            Send message
+          </Button>
+        </Group>
+      </form> */}
+      <h1 style={{ fontFamily: `Greycliff CF, ${theme.fontFamily}`, color: theme.white }}>Please reach me via phone on 07530277946 <br /> or via email at tayc9518@gmail.com</h1>
 
-      <Group position="center" mt="xl">
-        <Button variant="gradient" gradient={{ from: 'teal', to: 'grape' }} type="submit" size="md">
-          Send message
-        </Button>
-      </Group>
-    </form>
-    <h1 style={{fontFamily: `Greycliff CF, ${theme.fontFamily}`, color: theme.white}}>Or reach me via email at mat_crawshaw@hotmail.com</h1>
-
- </div>
+    </div>
   );
 
 
