@@ -202,7 +202,7 @@ export function HeaderResponsive({ links }) {
                   <code>Contact Me</code>
                 </NavLink>
                 <Text
-                  color="gray.5"
+
                   component="a"
                   px={7}
                   target="_blank"
