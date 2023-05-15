@@ -14,7 +14,8 @@ import {
   Button
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import logolight from './logo-light.png'
+import logolight from './logo-light.png';
+import React from 'react';
 
 const HEADER_HEIGHT = rem(60);
 
@@ -92,7 +93,7 @@ const useStyles = createStyles((theme) => ({
 
 
 
-export function HeaderResponsive({ links }: HeaderResponsiveProps) {
+export function HeaderResponsive({ links }) {
   const [opened, { toggle, close }] = useDisclosure(false);
   const [active, setActive] = useState(links[0].link);
   const { classes, cx } = useStyles();

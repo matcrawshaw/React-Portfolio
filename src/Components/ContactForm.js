@@ -2,8 +2,26 @@
 import { TextInput, Textarea, SimpleGrid, Group, Title, Button, useMantineTheme } from '@mantine/core';
 import { useForm } from '@mantine/form';
 
+import React from 'react';
+import emailjs from '@emailjs/browser';
+
 
 function GetInTouchSimple() {
+
+
+  const sendEmail = (e) => {
+    // e.preventDefault();
+
+    emailjs.send("service_mr586wb", "template_rfyxy4n", {
+      user_name: e.name,
+      message: e.message,
+      user_email: e.email,
+      message_subject: e.message,
+    }, 'bv-z7vq6XbBpRDLt4');
+
+  };
+
+
   const theme = useMantineTheme();
   const form = useForm({
     initialValues: {
@@ -20,13 +38,15 @@ function GetInTouchSimple() {
   });
 
 
-
   return (
 
 
     <div style={{ opacity: "90%" }}>
-      {/* <form onSubmit={form.onSubmit((e) => {
-        console.log(e);
+      <form onSubmit={form.onSubmit((e) => {
+        sendEmail(e);
+        alert('Thank you for your message! I will be in touch as soon as possible')
+        window.location.reload(false);
+
       })}>
         <Title
           order={2}
@@ -42,14 +62,14 @@ function GetInTouchSimple() {
           <TextInput
             label="Name"
             placeholder="Your name"
-            name="name"
+            name="user_name"
             variant="filled"
             {...form.getInputProps('name')}
           />
           <TextInput
             label="Email"
             placeholder="Your email"
-            name="email"
+            name="user_email"
             variant="filled"
             {...form.getInputProps('email')}
           />
@@ -57,7 +77,7 @@ function GetInTouchSimple() {
 
         <TextInput
           label="Subject"
-          placeholder="Subject"
+          placeholder="subject"
           mt="md"
           name="subject"
           variant="filled"
@@ -65,7 +85,7 @@ function GetInTouchSimple() {
         />
         <Textarea
           mt="md"
-          label="Message"
+          label="message"
           placeholder="Your message"
           maxRows={10}
           minRows={5}
@@ -80,7 +100,7 @@ function GetInTouchSimple() {
             Send message
           </Button>
         </Group>
-      </form> */}
+      </form>
       <h1 style={{ fontFamily: `Greycliff CF, ${theme.fontFamily}`, color: theme.white }}>Please reach me via phone on 07530277946 <br /> or via email at tayc9518@gmail.com</h1>
 
     </div>

@@ -5,7 +5,7 @@ import {
     useMantineTheme} from '@mantine/core';
 
   import "../Fonts/Jaldi-Bold.ttf"
- 
+  import React from 'react';
 
 
 const useStyles = createStyles((theme) => ({

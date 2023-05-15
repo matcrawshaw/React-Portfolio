@@ -1,18 +1,19 @@
-import { 
-    createStyles, 
-    Container, 
-    rem,
-    useMantineTheme, 
-    Avatar,
-  Button } from '@mantine/core';
-  import { IconBrandGithub, IconBrandLinkedin} from '@tabler/icons-react';
-  import "../Fonts/Jaldi-Bold.ttf";
-  import headphoto from '../Components/PortfolioPhoto1.jpg'
- 
-import avatarPhoto from './person-outline.png'
+import {
+  createStyles,
+  Container,
+  rem,
+  useMantineTheme,
+  Avatar,
+  Button
+} from '@mantine/core';
+import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-react';
+import "../Fonts/Jaldi-Bold.ttf";
+import headphoto from '../Components/PortfolioPhoto1.jpg'
+import React from 'react';
+
 import { Link } from "react-router-dom";
 const useStyles = createStyles((theme) => ({
-  
+
   root: {
     position: "relative",
     // background: "#1A1B1E",
@@ -89,20 +90,20 @@ function HomeJumbotron() {
   const theme = useMantineTheme();
   return (
     <div className={classes.root}>
-      <Container size="lg" style={{ display: "inline", height: rem(1000) }}> 
-  <code style={{color: theme.white, display: "block"}} >Hi there 👋 i'm</code> 
-  <h1 style={{color: "#96F2D7", fontFamily: "Jaldi-Bold", display: "block"}}>Tay Crawshaw </h1>
-  <img  style={{background: "rgba(0, 0, 0, 0.6)", display: "inline-block", marginTop: -10, src: headphoto, width: "15dvw" }} src={headphoto} alt="it's me" ></img>
-  <code style={{color: theme.white, marginTop: 20, display: "block"}} >And i'm a front-end web developer. </code> 
-  <Link to="/work" end>
-  <Button style={{marginTop: rem(22)}}variant="gradient" gradient={{ from: 'teal', to: 'grape' }}>Check My Builds</Button>
-  </Link>
-      <div style={{marginTop: rem(14)}}>
-      <a href="" style={{color: theme.white, marginTop: rem(15), display: "inline"}}> <IconBrandGithub/></a>
-      <a href="" style={{color: theme.white, marginTop: rem(15), display: "inline"}}><IconBrandLinkedin/></a>
-      </div>
+      <Container size="lg" style={{ display: "inline", height: rem(1000) }}>
+        <code style={{ color: theme.white, display: "block" }} >Hi there 👋 i'm</code>
+        <h1 style={{ color: "#96F2D7", fontFamily: "Jaldi-Bold", display: "block" }}>Tay Crawshaw </h1>
+        <img style={{ background: "rgba(0, 0, 0, 0.6)", display: "inline-block", marginTop: -10, src: headphoto, width: "180px" }} src={headphoto} alt="it's me" ></img>
+        <code style={{ color: theme.white, marginTop: 20, display: "block" }} >And i'm a front-end web developer. </code>
+        <Link to="/work" end>
+          <Button style={{ marginTop: rem(22) }} variant="gradient" gradient={{ from: 'teal', to: 'grape' }}>Check My Builds</Button>
+        </Link>
+        <div style={{ marginTop: rem(14) }}>
+          <a href="https://github.com/taycrawshaw" style={{ color: theme.white, marginTop: rem(15), display: "inline" }}> <IconBrandGithub /></a>
+          <a href="https://www.linkedin.com/in/tay-c-3a0487176/" style={{ color: theme.white, marginTop: rem(15), display: "inline" }}><IconBrandLinkedin /></a>
+        </div>
       </Container>
-      
+
 
 
 

@@ -1,8 +1,8 @@
-import React, {useState} from "react";
-import ArticleCard from './Card'
+import React from "react";
+
 import { Grid } from '@mantine/core';
 import ArticleCardFooter from './Card';
-import { GithubIcon } from "@mantine/ds";
+
 const projectsData = require('../Projects.json');
 
 

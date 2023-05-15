@@ -7,7 +7,7 @@ import {
   import "../Fonts/Jaldi-Bold.ttf"
  
 import Cards from '../Components/CardGrid'
-
+import React from 'react';
 const useStyles = createStyles((theme) => ({
   
   root: {
