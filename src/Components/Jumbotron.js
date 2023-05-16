@@ -3,7 +3,6 @@ import {
   Container,
   rem,
   useMantineTheme,
-  Avatar,
   Button
 } from '@mantine/core';
 import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-react';
@@ -91,7 +90,7 @@ function HomeJumbotron() {
   return (
     <div className={classes.root}>
       <Container size="lg" style={{ display: "inline", height: rem(1000) }}>
-        <code style={{ color: theme.white, display: "block" }} >Hi there 👋 i'm</code>
+        <code style={{ color: theme.white, display: "block" }} >Hi there <span role="img">👋</span> i'm</code>
         <h1 style={{ color: "#96F2D7", fontFamily: "Jaldi-Bold", display: "block" }}>Tay Crawshaw </h1>
         <img style={{ background: "rgba(0, 0, 0, 0.6)", display: "inline-block", marginTop: -10, src: headphoto, width: "180px" }} src={headphoto} alt="it's me" ></img>
         <code style={{ color: theme.white, marginTop: 20, display: "block" }} >And i'm a front-end web developer. </code>

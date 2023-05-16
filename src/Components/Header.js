@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
+// import { useState } from 'react';
 import {
   createStyles,
   Header,
@@ -38,6 +38,7 @@ const useStyles = createStyles((theme) => ({
     borderTopLeftRadius: 0,
     borderTopWidth: 0,
     overflow: 'hidden',
+    marginTop: "10px",
 
     [theme.fn.largerThan('sm')]: {
       display: 'none',
@@ -94,9 +95,9 @@ const useStyles = createStyles((theme) => ({
 
 
 export function HeaderResponsive({ links }) {
-  const [opened, { toggle, close }] = useDisclosure(false);
-  const [active, setActive] = useState(links[0].link);
-  const { classes, cx } = useStyles();
+  const [opened, { toggle }] = useDisclosure(false);
+  // const [active, setActive] = useState(links[0].link);
+  const { classes } = useStyles();
 
 
   return (
