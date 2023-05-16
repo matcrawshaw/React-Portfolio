@@ -101,7 +101,7 @@ function GetInTouchSimple() {
           </Button>
         </Group>
       </form>
-      <h1 style={{ fontFamily: `Greycliff CF, ${theme.fontFamily}`, color: theme.white }}>Please reach me via phone on 07530277946 <br /> or via email at tayc9518@gmail.com</h1>
+      <h1 style={{ fontFamily: `Greycliff CF, ${theme.fontFamily}`, color: theme.white }}>Alternatively, you can reach me via phone on 07530 277946, <br /> or via email at tayc9518@gmail.com</h1>
 
     </div>
   );
