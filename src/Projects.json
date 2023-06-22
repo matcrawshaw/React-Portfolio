@@ -1,52 +1,104 @@
 [
     {
+        "name": "SquareOne Laser Clinic",
+        "details": {
+            "description": "Front-end website for a laser clinic with booking functionality, to be developed further."
+        },
+        "tech": [
+            "Typescript",
+            "Next JS",
+            "HTML",
+            "CSS"
+        ],
+        "img": "https://private-user-images.githubusercontent.com/119896882/247940707-700bf49c-31df-481c-a1df-fa0632bb688a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg3NDQxNzM2LCJuYmYiOjE2ODc0NDE0MzYsInBhdGgiOiIvMTE5ODk2ODgyLzI0Nzk0MDcwNy03MDBiZjQ5Yy0zMWRmLTQ4MWMtYTFkZi1mYTA2MzJiYjY4OGEucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDYyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA2MjJUMTM0MzU2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NjNjNmZiM2M2ZGIxMDE3YzYwODQ5ZGFjN2U3MDQ5ZjkzYzI5MWI3MjBlMzNkMDRmMDBmNTUxNWNmNDVlMDExYiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.SBVBjEoWtJTgWF5oN_twTscg1usR3A9pD1iFFoysmbc",
+        "repo": "https://github.com/taycrawshaw/sclasersite",
+        "live": "https://www.squareonelaserclinic.co.uk/"
+    },
+    {
         "name": "NoiseTracker",
-        "details": {"description": "Front-end application utilizing the LastFM API to show charts, as well as sync with other linked platforms. This was the final group project of the bootcamp."},
-        "tech": ["React", "Mantine", "Javascript", "HTML", "CSS"],
+        "details": {
+            "description": "Front-end application utilizing the LastFM API to show charts, as well as sync with other linked platforms. This was the final group project of the bootcamp."
+        },
+        "tech": [
+            "React",
+            "Mantine",
+            "Javascript",
+            "HTML",
+            "CSS"
+        ],
         "img": "https://user-images.githubusercontent.com/119896882/228902162-aae7a902-40c3-41af-b335-4b57f83097a4.PNG",
         "repo": "https://github.com/taycrawshaw/music-info-app",
         "live": "https://courageous-bienenstitch-5285d5.netlify.app/home"
     },
     {
         "name": "Team Profile Generator",
-        "details": {"description": "Command line application to generate a HTML page containing team information collected via terminal prompts"},
-        "tech": ["Node.js", "Jest", "HTML", "CSS"],
+        "details": {
+            "description": "Command line application to generate a HTML page containing team information collected via terminal prompts"
+        },
+        "tech": [
+            "Node.js",
+            "Jest",
+            "HTML",
+            "CSS"
+        ],
         "img": "https://user-images.githubusercontent.com/119896882/224826158-637a3f54-7e92-4e92-b821-9185fcf05ff6.PNG",
         "repo": "https://github.com/taycrawshaw/Team-Profile-Generator",
         "live": "https://github.com/taycrawshaw/Team-Profile-Generator"
     },
     {
         "name": "README Generator",
-        "details": {"description": "Command line application to generate professional README.md files via Node.js. Once running, the user is prompted a series of questions which is then used to populate the template as required."},
-        "tech": ["Node.js", "Inquirer"],
+        "details": {
+            "description": "Command line application to generate professional README.md files via Node.js. Once running, the user is prompted a series of questions which is then used to populate the template as required."
+        },
+        "tech": [
+            "Node.js",
+            "Inquirer"
+        ],
         "img": "https://user-images.githubusercontent.com/119896882/226229852-63e90f2c-2a38-4f1b-82f8-7176636f5b8e.png",
         "repo": "https://github.com/taycrawshaw/ReadMeGenerator",
         "live": "https://github.com/taycrawshaw/ReadMeGenerator"
     },
     {
         "name": "Get Ready",
-        "details": {"description": "Front end webpage that gathers information about a location for a user to help prepare for their travel."},
-        "tech": ["jQuery", "Javascript", "Bootstrap", "HTML", "CSS"],
+        "details": {
+            "description": "Front end webpage that gathers information about a location for a user to help prepare for their travel."
+        },
+        "tech": [
+            "jQuery",
+            "Javascript",
+            "Bootstrap",
+            "HTML",
+            "CSS"
+        ],
         "img": "https://user-images.githubusercontent.com/118021969/226191381-2952d7ba-184e-4d8c-a44b-94d635e8ae06.png",
         "repo": "https://github.com/Maks6831/travel-infoguide",
         "live": "https://maks6831.github.io/travel-infoguide/"
     },
     {
         "name": "Code Quiz",
-        "details": {"description": "Javascript knowledge quiz with saved highscores"},
-        "tech": ["Javascript"],
+        "details": {
+            "description": "Javascript knowledge quiz with saved highscores"
+        },
+        "tech": [
+            "Javascript"
+        ],
         "img": "https://user-images.githubusercontent.com/119896882/214693488-9f32b03d-3c0d-4dcc-adf7-dbff607d6ced.png",
         "repo": "https://github.com/taycrawshaw/Code-Quiz",
         "live": "https://taycrawshaw.github.io/Code-Quiz/"
     },
     {
         "name": "Weather Dashboard",
-        "details": {"description": "Web application using the OpenWeather API, input a city to see current weather and 5-day forecast."},
-        "tech": ["jQuery", "Javascript", "HTML", "CSS"],
+        "details": {
+            "description": "Web application using the OpenWeather API, input a city to see current weather and 5-day forecast."
+        },
+        "tech": [
+            "jQuery",
+            "Javascript",
+            "HTML",
+            "CSS"
+        ],
         "img": "https://user-images.githubusercontent.com/119896882/217853352-08b02d3c-31b0-4d8c-a73b-c339158abf0f.PNG",
         "repo": "https://github.com/taycrawshaw/Weather-Dashboard-App",
         "live": "https://taycrawshaw.github.io/Weather-Dashboard-App/"
     }
-    
-
 ]
